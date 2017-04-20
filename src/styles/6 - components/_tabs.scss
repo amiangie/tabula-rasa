@@ -6,23 +6,24 @@
   font-size: 0;
   margin: 0;
 }
-.tabs-list__tab {
+.tabs-list__item {
   display: inline-block;
+  margin-right: 2px;
+  margin-bottom: 0;
+}
+.tabs-list__tab {
+  border: none;
   background: $color-bg-grey;
+  color: $color-white;
   text-transform: uppercase;
   font-size: 1.3rem;
   padding: 1rem 3rem 0.5rem;
-  margin-right: 2px;
-  margin-bottom: 0;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
+  cursor: pointer;
   &[aria-selected='true'] {
     background: linear-gradient(to bottom, $color-mint 0%, $color-tiffanyblue 100%); 
   }
-}
-.tabs-list__link {
-  text-decoration: none;
-  color: $color-white;
 }
 .tabs-panel {
   display: flex;
