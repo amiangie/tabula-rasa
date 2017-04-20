@@ -1,7 +1,21 @@
 // Footer
 
-.c-footer {
-  border-top: 1px solid $color-border;
-  font-size: 0.8rem;
-  margin-top: 2rem;
+.page-footer {
+  text-align: center;
+}
+.back-to-top {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color-light-grey;
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 4em;
+}
+.back-to-top__image {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto;
+  transform: rotate(-90deg);
 }
