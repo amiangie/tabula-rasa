@@ -26,24 +26,3 @@ $('.js-tab').click(function(){
     var $tabPanel = $("#" + tabPanelId);  
 	$tabPanel.attr('aria-hidden', 'false');
  });
-
-
-
-//const tabs = document.querySelectorAll('.js-tab');
-//
-//[...tabs].forEach(tab => {
-//  tab.addEventListener('click', function(event) {
-//    event.preventDefault();
-////    hideOtherTabs(this);
-//    tabs.setAttribute('aria-selected', false);
-//    const newAriaSelected = !(this.getAttribute('aria-selected') == 'true');
-//    this.setAttribute('aria-selected', newAriaSelected);
-//  });
-//});
-//
-//function hideOtherTabs(ele) {
-//  const otherTabs = [...tabs].filter(tab => tab !== ele);
-//  otherTabs.forEach(tab => {
-//    tab.setAttribute('aria-selected', false);
-//  });
-//}
