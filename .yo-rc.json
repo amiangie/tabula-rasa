@@ -1,0 +1,15 @@
+{
+  "generator-chisel": {
+    "config": {
+      "name": "Tabula Rasa",
+      "author": "angie",
+      "projectType": "fe",
+      "nameSlug": "tabula-rasa",
+      "nameCamel": "Tabularasa",
+      "features": {
+        "has_jquery": true,
+        "has_babel": true
+      }
+    }
+  }
+}
