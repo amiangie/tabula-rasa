@@ -20,6 +20,11 @@
     object-fit: cover;
     border-radius: 2rem;
   }
+  
+  @include bp-mobile {
+    height: auto;
+    width: 100%;
+  }
 }
 
 .box__image-links {
@@ -52,6 +57,17 @@
 
 .box--rounded {
   text-align: center;
+  
+  @include bp-mobile {
+    flex: 0 0 calc(50% - #{$gap});
+    min-width: calc(50% - #{$gap});
+    
+    &:last-child {
+      flex: 0 0 calc(100% - #{$gap});
+      min-width: calc(100% - #{$gap});
+    }
+  }
+  
   .box__image-links {
     width: 100%;
     text-align: center;
@@ -70,6 +86,9 @@
       width: auto;
       border-radius: 100%;
       box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.3);
+      @include bp-mobile {
+        width: 100%;
+      }
     }
   }
 }

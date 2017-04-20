@@ -9,4 +9,8 @@
   margin: 0;
   font-weight: normal;
   line-height: 5.5rem;
+  
+  @include bp-mobile {
+    font-size: 2rem;
+  }
 }

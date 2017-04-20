@@ -9,15 +9,13 @@
 .grid {
   display: flex;
   flex-wrap: wrap;
-//  padding: $gap/2;
-  
-  .grid__item {
-    margin: $gap/2;
-  }
-  .grid__item--third {
-    flex: 1 0 calc(33% - #{$gap});
-    min-width: 18rem;
-  }
+}
+.grid__item {
+  margin: $gap/2;
+}
+.grid__item--third {
+  flex: 1 0 calc(33% - #{$gap});
+  min-width: 18rem;
 }
 
 .page-section:not(:last-child) {

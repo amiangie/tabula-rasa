@@ -3,14 +3,17 @@
 
 {% block content %}
   <div class="wrapper">
-    <section class="page-section grid">
-      {% include 'partials/box.twig' with {'showBuy': true, 'showPlay': true} %}
-      {% include 'partials/box.twig' with {'showBuy': true, 'showPlay': false} %}
-      {% include 'partials/box.twig' with {'showBuy': false, 'showPlay': false} %}
-
-      {% include 'partials/box.twig' with {'showBuy': false, 'showPlay': true, 'rounded': true} %}
-      {% include 'partials/box.twig' with {'showBuy': false, 'showPlay': false, 'rounded': true} %}
-      {% include 'partials/box.twig' with {'showBuy': false, 'showPlay': false, 'rounded': true} %}
+    <section class="page-section">
+      <div class="grid">
+        {% include 'partials/box.twig' with {'showBuy': true, 'showPlay': true} %}
+        {% include 'partials/box.twig' with {'showBuy': true, 'showPlay': false} %}
+        {% include 'partials/box.twig' with {'showBuy': false, 'showPlay': false} %}
+      </div>
+      <div class="grid">
+        {% include 'partials/box.twig' with {'showBuy': false, 'showPlay': true, 'rounded': true} %}
+        {% include 'partials/box.twig' with {'showBuy': false, 'showPlay': false, 'rounded': true} %}
+        {% include 'partials/box.twig' with {'showBuy': false, 'showPlay': false, 'rounded': true} %}
+      </div>
     </section>
     <section class="page-section">
       {% include 'partials/slider.twig' %}
