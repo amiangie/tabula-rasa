@@ -24,3 +24,8 @@
     flex: 0 0 calc(50% - #{$gap});
    }
 }
+
+.page-section {
+  border-bottom: 1px solid $color-border;
+  margin-bottom: $gap;
+}
