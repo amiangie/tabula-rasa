@@ -3,6 +3,9 @@
 .slider {
   position: relative;
   padding: 0 3rem;
+  @include bp-mobile {
+    padding: 0 1.5rem;
+  }
 }
 .slider__arrow {
   position: absolute;
@@ -24,6 +27,10 @@
   &:hover {
     opacity: 0.8;
     transition: opacity 0.25s;
+  }
+  
+  @include bp-mobile {
+    width: 1.5rem;
   }
 }
 .slider__slide {

@@ -14,15 +14,10 @@
   .grid__item {
     margin: $gap/2;
   }
-  .grid__item--fourth {
-    flex: 0 0 calc(25% - #{$gap});
-  }
   .grid__item--third {
-    flex: 0 0 calc(33% - #{$gap});
+    flex: 1 0 calc(33% - #{$gap});
+    min-width: 18rem;
   }
-  .grid__item--half {
-    flex: 0 0 calc(50% - #{$gap});
-   }
 }
 
 .page-section:not(:last-child) {

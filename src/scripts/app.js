@@ -13,7 +13,15 @@ $('.js-slider').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
   prevArrow: $('.js-slider-prev'),
-  nextArrow: $('.js-slider-next')
+  nextArrow: $('.js-slider-next'),
+  responsive: [
+    {
+      breakpoint: 700,
+      settings: {
+        slidesToShow: 2
+      }
+    }
+  ]
 });
 
 
