@@ -1,0 +1,21 @@
+<article class="box {{ (rounded) ? 'box--rounded' : '' }}">
+  <div class="box__image">
+    <div class="box__image-links">
+     {% if showBuy %}
+      <a href="" class="box__image-link box__image-link--buy">
+       buy
+        <span class="u-visuallyhidden">Buy</span>
+      </a>
+      {% endif %}
+      {% if showPlay %}
+      <a href="" class="box__image-link box__image-link--play">
+       play
+        <span class="u-visuallyhidden">Play</span>
+      </a>
+      {% endif %}
+    </div>
+  </div>
+  <div class="box__text">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at orci luctus lectus ornare hendrerit id in arcu. Donec quis vehicula metus. Sed libero neque, convallis sit amet accumsan vitae, pharetra non nisi.</p>
+  </div>
+</article>

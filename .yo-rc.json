@@ -10,6 +10,10 @@
         "has_jquery": true,
         "has_babel": true
       }
-    }
+    },
+    "pages": [
+      "Home",
+      "Tabula Rasa"
+    ]
   }
 }

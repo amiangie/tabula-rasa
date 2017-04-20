@@ -7,28 +7,23 @@
 {% endblock %}
 
 <body class="{{body_class}}" data-template="base.twig">
-  <header>
+  <header class="page-header">
     {% block header %}
-      <a href="{{site.url}}" rel="home">{{site.name}}</a>
+      {% include 'partials/header.twig' %}
     {% endblock %}
   </header>
 
-  <main>
+  <main class="page-content">
     {% block content %}
       Sorry, no content
     {% endblock %}
   </main>
 
-  {% block sidebar %}
-    <aside>
-      {% include 'partials/sidebar.twig' %}
-    </aside>
-  {% endblock %}
-
   {% block footer %}
-    <footer>
+    <footer class="page-footer">
       {% include 'partials/footer.twig' %}
     </footer>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <script src="scripts/{{ assetPath('bundle.js') }}" async></script>
   {% endblock %}
 </body>

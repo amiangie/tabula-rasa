@@ -1,0 +1,22 @@
+{% extends "layouts/base.twig" %}
+{% set pageName = 'Home' %}
+
+{% block content %}
+  <section class="page-section">
+    {% include 'partials/box.twig' with {'showBuy': true, 'showPlay': true} %}
+    {% include 'partials/box.twig' with {'showBuy': true, 'showPlay': false} %}
+    {% include 'partials/box.twig' with {'showBuy': false, 'showPlay': false} %}
+
+    {% include 'partials/box.twig' with {'showBuy': false, 'showPlay': true, 'rounded': true} %}
+    {% include 'partials/box.twig' with {'showBuy': false, 'showPlay': false, 'rounded': true} %}
+    {% include 'partials/box.twig' with {'showBuy': false, 'showPlay': false, 'rounded': true} %}
+  </section>
+  <section class="page-section">
+    {% include 'partials/slider.twig' %}
+  </section>
+  <section class="page-section">
+    {% include 'partials/tabs.twig' %}
+  </section>
+{% endblock %}
+
+
