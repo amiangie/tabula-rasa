@@ -17,20 +17,54 @@
   }
 }
 
+.box__image-links {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+}
+.box__image-link {
+  display: inline-block;
+  width: 2.625rem;
+  height: 2.625rem;
+  background-size: contain;
+  opacity: 0.75;
+  transition: opacity 0.25s;
+  &--buy {
+    background: url('https://icon.now.sh/shopping_cart/42/fff') center center no-repeat;
+  }
+  &--play {
+    background: url('https://icon.now.sh/play_circle_filled/42/fff') center center no-repeat;
+  }
+  &:hover {
+    opacity: 1;
+    transition: opacity 0.25s;
+  }
+}
+
 .box__text {
   line-height: 1.2em;
 }
 
 .box--rounded {
-  .box__image {
+  text-align: center;
+  .box__image-links {
+    width: 100%;
     text-align: center;
+    right: auto;
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .box__image-link {
+    width: 4rem;
+    height: 4rem;
+    background-size: contain;
+  }
+  .box__image {
     img {
       width: auto;
       border-radius: 100%;
       box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.3);
     }
-  }
-  .box__text {
-    text-align: center;
   }
 }
