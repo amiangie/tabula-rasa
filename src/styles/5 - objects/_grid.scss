@@ -15,12 +15,12 @@
     margin: $gap/2;
   }
   .grid__item--fourth {
-    flex: 1 0 calc(25% - #{$gap});
+    flex: 0 0 calc(25% - #{$gap});
   }
   .grid__item--third {
-    flex: 1 0 calc(33% - #{$gap});
+    flex: 0 0 calc(33% - #{$gap});
   }
   .grid__item--half {
-    flex: 1 0 calc(50% - #{$gap});
+    flex: 0 0 calc(50% - #{$gap});
    }
 }

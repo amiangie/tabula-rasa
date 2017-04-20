@@ -3,3 +3,34 @@
 .box {
   font-size: 1rem;
 }
+
+.box__image {
+  position: relative;
+  height: 15.625rem;
+  margin-bottom: 1rem;
+  
+  img {
+    height: 100%; 
+    width: 100%; 
+    object-fit: cover;
+    border-radius: 2rem;
+  }
+}
+
+.box__text {
+  line-height: 1.2em;
+}
+
+.box--rounded {
+  .box__image {
+    text-align: center;
+    img {
+      width: auto;
+      border-radius: 100%;
+      box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.3);
+    }
+  }
+  .box__text {
+    text-align: center;
+  }
+}
