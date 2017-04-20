@@ -1,32 +1,40 @@
-<div class="tabs">
+<div class="tabs" role="tablist">
   <ul class="tabs-list">
-    <li class="tabs-list__tab tabs-list__tab--active"><a href="" class="tabs-list__link">Tab 1</a></li>
-    <li class="tabs-list__tab"><a href="" class="tabs-list__link">Tab 2</a></li>
-    <li class="tabs-list__tab"><a href="" class="tabs-list__link">Tab 3</a></li>
-    <li class="tabs-list__tab"><a href="" class="tabs-list__link">Tab 4</a></li>
+    <li id="tab1" class="tabs-list__tab" role="tab" aria-controls="panel1" aria-selected="true">
+      <a href="" class="tabs-list__link">Tab 1</a>
+    </li>
+    <li id="tab2" class="tabs-list__tab" role="tab" aria-controls="panel2" aria-selected="false">
+      <a href="" class="tabs-list__link">Tab 2</a>
+    </li>
+    <li id="tab3" class="tabs-list__tab" role="tab" aria-controls="panel3" aria-selected="false">
+      <a href="" class="tabs-list__link">Tab 3</a>
+    </li>
+    <li id="tab4" class="tabs-list__tab" role="tab" aria-controls="panel4" aria-selected="false">
+      <a href="" class="tabs-list__link">Tab 4</a>
+    </li>
   </ul>
-  <article class="tabs-panel">
+  <article id="panel1" class="tabs-panel" role="tabpanel" aria-labelledby="tab1" aria-hidden="false">
     <img src="assets/images/ruut.jpg" alt="" class="tabs-panel__image">
     <div class="tabs-panel__content">
       <h2 class="tabs-panel__title">Some nice tab title</h2>
       <p>Some nice tab content could be here, if only I could think of something.</p>
     </div>
   </article>
-  <article class="tabs-panel">
+  <article id="panel2" class="tabs-panel" role="tabpanel" aria-labelledby="tab2" aria-hidden="true">
     <img src="assets/images/mule.jpg" alt="" class="tabs-panel__image">
     <div class="tabs-panel__content">
       <h2 class="tabs-panel__title">Another tab title</h2>
       <p>Some nice tab content could be here, if only I could think of something.</p>
     </div>
   </article>
-  <article class="tabs-panel">
+  <article id="panel3" class="tabs-panel" role="tabpanel" aria-labelledby="tab3" aria-hidden="true">
     <img src="assets/images/ruut.jpg" alt="" class="tabs-panel__image">
     <div class="tabs-panel__content">
       <h2 class="tabs-panel__title">Oohh, this is a good one, is it my Birthday?</h2>
       <p>Some nice tab content could be here, if only I could think of something.</p>
     </div>
   </article>
-  <article class="tabs-panel">
+  <article id="panel4" class="tabs-panel" role="tabpanel" aria-labelledby="tab4" aria-hidden="true">
     <img src="assets/images/ristkylik.jpg" alt="" class="tabs-panel__image">
     <div class="tabs-panel__content">
       <h2 class="tabs-panel__title">It is what it is</h2>

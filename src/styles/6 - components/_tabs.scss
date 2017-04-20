@@ -16,7 +16,7 @@
   margin-bottom: 0;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
-  &--active {
+  &[aria-selected='true'] {
     background: linear-gradient(to bottom, $color-mint 0%, $color-tiffanyblue 100%); 
   }
 }
@@ -30,6 +30,9 @@
   border-radius: 1rem;
   border-top-left-radius: 0;
   background: linear-gradient(to bottom, $color-tiffanyblue 0%, $color-violet 100%); 
+  &[aria-hidden='true'] {
+    display: none;
+  }
 }
 .tabs-panel__image {
   width: 16.5rem;
