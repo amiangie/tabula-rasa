@@ -3,6 +3,17 @@
   Author: angie
  */
 
-var greet = require('./greeting.js')
+var $ = require('jquery');
+require('slick-carousel');
 
-greet('World');
+
+$('.js-slider').slick({
+  dots: false,
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  prevArrow: $('.js-slider-prev'),
+  nextArrow: $('.js-slider-next')
+});
+
+
