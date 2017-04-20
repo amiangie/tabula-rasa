@@ -1,0 +1,12 @@
+.page-header {
+  height: 5rem;
+  text-align: center;
+  text-transform: uppercase;
+  background: linear-gradient(to right, $color-blue 0%, $color-green 100%); 
+}
+.page-header__title {
+  color: $color-white;
+  margin: 0;
+  font-weight: normal;
+  line-height: 5rem;
+}

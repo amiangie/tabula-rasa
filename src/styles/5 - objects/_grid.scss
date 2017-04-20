@@ -1,0 +1,26 @@
+// Grid
+
+.wrapper {
+  width: 95%;
+  max-width: 62rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+//  padding: $gap/2;
+  
+  .grid__item {
+    margin: $gap/2;
+  }
+  .grid__item--fourth {
+    flex: 1 0 calc(25% - #{$gap});
+  }
+  .grid__item--third {
+    flex: 1 0 calc(33% - #{$gap});
+  }
+  .grid__item--half {
+    flex: 1 0 calc(50% - #{$gap});
+   }
+}
