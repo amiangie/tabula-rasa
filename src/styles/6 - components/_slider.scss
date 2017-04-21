@@ -41,7 +41,14 @@
   padding-top: 1em;
 }
 .slider__slide-picture {
+  position: relative;
+  overflow: hidden;
   height: 10rem;
-  width: 100%;
-  object-fit: cover;
+}
+.slider__image {
+  display: block;
+  min-height: 100%;
+  min-width: 100%;
+  transform: translateX(-50%);
+  transform: translateY(-30%);
 }
