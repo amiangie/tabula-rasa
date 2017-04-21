@@ -40,3 +40,9 @@ $('.js-toggle-tab').click(function(){
   $('.js-tabpanel').attr('aria-hidden', 'true');
   $tab.attr('aria-hidden', 'false');
 });
+
+$('.js-close-tab').click(function(e){
+  e.preventDefault();
+  const $tab = $(this).parent().parent();
+  $tab.attr('aria-hidden', 'true');
+});

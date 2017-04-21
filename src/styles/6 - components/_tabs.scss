@@ -92,7 +92,12 @@
     display: block;
   }
 }
-
+.tabs-panel__close {
+  display: none;
+  @include bp-mobile {
+    display: block;
+  }
+}
 
 
 
